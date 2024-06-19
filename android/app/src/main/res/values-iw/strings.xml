@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">קישור לב</string>
+    <string name="facebook_app_id">1482441508935661</string>
+    <string name="fb_login_protocol_scheme">fb1482441508935661</string>
+    <string name="facebook_client_token">fd635d04069f04399b98df473e6da5b4</string>
+    <string name="facebook_secret_token">492feffd8d6a3ac8d693a6ecdc0ee7ba</string>
+
+</resources>

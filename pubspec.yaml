@@ -1,0 +1,291 @@
+name: dating_app
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.1.3+72
+
+environment:
+  sdk: ">=2.19.2 <=3.4.3"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  provider: ^6.0.3
+
+  get: ^4.6.5
+  get_storage: ^2.1.1
+  sp_util: ^2.0.3
+
+  ### library [firebase]
+  firebase_core: ^2.26.0
+  cloud_firestore: ^4.13.3
+  firebase_database: ^10.3.4
+  firebase_core_platform_interface: ^5.0.0
+  firebase_analytics: ^10.7.0
+  firebase_app_check: ^0.2.1+6
+  firebase_auth: ^4.15.0
+  firebase_storage: ^11.5.1
+  firebase_messaging: ^14.7.6
+  firebase_remote_config: ^4.4.4
+
+  ### service library connect:
+  dio: ^5.4.0
+  http_proxy: ^1.2.1
+  google_sign_in: ^6.1.4
+  flutter_facebook_auth: ^6.0.4
+  connectivity_plus: ^6.0.3
+  teledart: ^0.6.1
+  socket_io_client: ^3.0.0-beta.2
+
+  ### library processing image & audio:
+  image: ^4.1.3
+  crop_image: ^1.0.10
+  image_picker: ^1.0.0
+  image_cropper: ^6.0.0
+  camera: ^0.10.5
+  video_player: ^2.4.7
+  file_picker: ^8.0.3
+  path_provider: ^2.0.11
+  flutter_svg: ^2.0.9
+  photo_view: ^0.15.0
+  cached_network_image: ^3.3.0
+  flutter_cache_manager: ^3.3.1
+  blurhash_dart: ^1.2.1
+  flutter_blurhash: ^0.8.2
+  path: ^1.8.3
+  just_audio: ^0.9.28
+  geocoding: ^3.0.0
+  country_codes: ^3.1.0+2
+  open_filex: ^4.3.2
+  photo_manager: ^3.1.1
+  photo_manager_image_provider: ^2.1.1
+  uuid: ^4.2.1
+  platform: ^3.1.3
+  watcher: ^1.1.0
+  pub_semver: ^2.1.4
+
+  ### library processing model
+  json_annotation: ^4.8.1
+  injectable: ^2.1.1
+  json_model: ^1.0.0
+  share_plus: ^9.0.0
+  sentry_flutter: ^8.2.0
+
+  ### library widget animation:
+  simple_ripple_animation: ^0.0.7
+  shimmer: ^3.0.0
+  lottie: ^3.0.0
+  flutter_slidable: ^3.0.0
+  page_transition: ^2.0.9
+  carousel_slider: ^4.2.1
+  sms_autofill: ^2.3.0
+  reorderable_grid_view: ^2.2.8
+  percent_indicator: ^4.2.2
+  pull_to_refresh: ^2.0.0
+  hero_animation: ^1.1.1
+  tag_view: ^0.0.9
+  octo_image: ^2.0.0
+
+  ### library noti and alert,toast:
+  alert_banner: ^1.0.0
+  fluttertoast: ^8.2.4
+  motion_toast: ^2.6.4
+  logger: ^2.0.1
+  flutter_local_notifications: ^17.1.1
+
+  ### library technology
+  google_mlkit_face_detection: ^0.11.0
+
+  ### library permission:
+  device_info_plus: ^10.1.0
+  permission_handler: ^11.1.0
+  devicelocale: ^0.7.0
+  geolocator: ^12.0.0
+  package_info_plus: ^8.0.0
+  flutter_animate: ^4.5.0
+
+  ### library logic:
+  equatable: ^2.0.5
+  either_dart: ^1.0.0
+  flutter_bloc: ^8.1.2
+
+  ### library material app:
+  flutter_screenutil: ^5.9.0
+  flutter_statusbarcolor_ns: ^0.5.0
+
+  ### library widget auth:
+  email_validator: ^2.0.1
+  pinput: ^4.0.0
+
+  dotted_border: ^2.0.0+3
+  auto_size_text: ^3.0.0
+  flutter_phoenix: ^1.1.1
+  diacritic: ^0.1.3
+  app_settings: ^5.1.1
+  flutter_share: ^2.0.0
+  encrypt: ^5.0.3
+  image_gallery_saver: ^2.0.3
+
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.19.0
+  flutter_staggered_grid_view: ^0.7.0
+  country_picker: ^2.0.16
+  flutter_easyloading: ^3.0.5
+  ezanimation: ^0.6.0
+  flutter_datetime_picker_plus: ^2.1.0
+  url_launcher: ^6.1.14
+  age_calculator: ^1.0.0
+  modal_bottom_sheet: ^3.0.0-pre
+  diffutil_dart: ^4.0.0
+  flutter_parsed_text: ^2.2.1
+  meta: '>=1.8.0 <2.0.0'
+  scroll_to_index: ^3.0.1
+  flutter_keyboard_visibility: ^6.0.0
+  dart_ipify: ^1.1.1
+  visibility_detector: ^0.4.0+2
+
+  #dart run intl_utils:generate
+  intl_utils: ^2.8.6
+
+  clickable_list_wheel_view: ^0.2.0
+  adaptive_action_sheet: ^2.0.3
+  flutter_launcher_icons: ^0.13.1
+  syncfusion_flutter_core: ^25.1.38
+  build_runner: ^2.4.6
+
+  #  font_awesome_flutter: ^10.1.0
+  #  shared_preferences: ^2.0.15
+  #  alt_sms_autofill: ^1.0.0
+  #  pin_code_fields: ^7.4.0
+  #  easy_localization: ^3.0.1
+  #  google_fonts: ^3.0.1
+  #  flutter_onboarding_screen: ^2.0.2
+  #  webview_flutter: ^3.2.1
+  #  location: ^4.4.0
+  # flutter_background_geolocation: ^4.8.3
+  notification_center: ^1.0.1
+  indexed: ^0.0.8
+  firebase_dynamic_links: ^5.4.8
+  adaptive_dialog: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.6
+
+  # flutter pub run build_runner build
+  # or
+  # dart run build_runner build --delete-conflicting-outputs
+  #flutter packages pub run build_runner build
+  injectable_generator: ^2.1.5
+  json_serializable: ^6.7.1
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^4.0.0
+  # test: ^1.21.4
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+#  generate: true
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/png/
+    - assets/svg/
+    - assets/json/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Roboto Bold
+      fonts:
+        - asset: assets/fonts/Roboto-Bold.ttf
+    - family: Roboto Medium
+      fonts:
+        - asset: assets/fonts/Roboto-Medium.ttf
+    - family: Roboto Regular
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+
+    - family: Livvic Bold
+      fonts:
+        - asset: assets/fonts/Livvic/Livvic-Bold.ttf
+
+    - family: Livvic Medium
+      fonts:
+        - asset: assets/fonts/Livvic/Livvic-Medium.ttf
+
+    - family: Livvic Regular
+      fonts:
+        - asset: assets/fonts/Livvic/Livvic-Regular.ttf
+
+    - family: Livvic Italic
+      fonts:
+        - asset: assets/fonts/Livvic/Livvic-Italic.ttf
+
+    - family: Livvic SemiBold
+      fonts:
+        - asset: assets/fonts/Livvic/Livvic-SemiBold.ttf
+
+    - family: Mulish Regular
+      fonts:
+        - asset: assets/fonts/Mulish/Mulish-Regular.ttf
+
+    - family: Mulish Bold
+      fonts:
+        - asset: assets/fonts/Mulish/Mulish-Bold.ttf
+
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+flutter_intl:
+  enabled: true
+  class_name: S
+  main_locale: en
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/png/app_icon.png"
+  min_sdk_android: 21

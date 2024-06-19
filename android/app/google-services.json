@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "927206952114",
+    "firebase_url": "https://heartlink-dating-project-default-rtdb.firebaseio.com",
+    "project_id": "heartlink-dating-project",
+    "storage_bucket": "heartlink-dating-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927206952114:android:433ae0a2e2f9c495d88dab",
+        "android_client_info": {
+          "package_name": "com.dating.heartlink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927206952114-73lagmaoh9j4lqpi8pjrep5evsshjssk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dating.heartlink",
+            "certificate_hash": "8e28287c0a44251695ae35021bbf2eff04006d4e"
+          }
+        },
+        {
+          "client_id": "927206952114-v3agofb3586cgejqvhavgbljocl9d662.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhds0TxN-XUh1k5MAMbVeUbc5zV71y6no"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927206952114-v3agofb3586cgejqvhavgbljocl9d662.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "927206952114-dgpa3hr5odfqqcoitq0j4c9phq3n6g8i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.amobi.barcode.qrcode.scanner"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

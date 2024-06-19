@@ -1,0 +1,80 @@
+import 'package:dating_app/src/components/widgets/dating_button.dart';
+import 'package:dating_app/src/utils/utils.dart';
+import 'package:flutter/material.dart';
+
+import '../../../domain/services/navigator/route_service.dart';
+
+class HeartLinkDialog extends StatelessWidget {
+  final String title;
+  final String content;
+  final VoidCallback continueCallBack;
+
+  const HeartLinkDialog({super.key, required this.title, required this.content, required this.continueCallBack});
+
+  dialogContent(BuildContext context) {
+    return Container(
+      height: Get.height / 2.2,
+      width: Get.width - 16,
+      decoration: BoxDecoration(
+        color: ThemeColor.darkMainColor,
+        shape: BoxShape.rectangle,
+        borderRadius: BorderRadius.circular(ThemeDimen.borderRadiusNormal),
+        boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 10.0, offset: Offset(0.0, 10.0))],
+      ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const Padding(
+              padding: EdgeInsets.only(top: 25),
+              child: Center(
+                child: Icon(
+                  Icons.verified_user,
+                  color: Colors.blue,
+                  size: 36,
+                ),
+              )),
+          Padding(
+            padding: EdgeInsets.only(top: ThemeDimen.paddingNormal),
+            child: Text(
+              S.current.get_verified,
+              style: ThemeUtils.getTextStyle().copyWith(color: Colors.white),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 20, right: 20, top: 15),
+            child: Center(
+              child: Text(
+                S.current.get_verified_notice,
+                style: ThemeUtils.getTextStyle().copyWith(color: Colors.white),
+                overflow: TextOverflow.clip,
+                maxLines: 4,
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 15, right: 15, top: 40),
+            child: DatingButton.darkButton(S.current.str_continue, true, continueCallBack),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: ThemeDimen.paddingNormal),
+            child: InkWell(
+              onTap: () {
+                RouteService.pop();
+              },
+              child: Text(
+                S.current.may_be_later.toUpperCase(),
+                style: ThemeTextStyle.kDatingMediumFontStyle(15, Colors.white),
+              ),
+            ),
+          )
+        ],
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Dialog(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)), backgroundColor: Colors.transparent, child: dialogContent(context));
+  }
+}
